@@ -3,7 +3,6 @@ import CookingImg from "../assets/BasedPicture.png";
 const AuthPage = ({ children }) => {
   return (
     <div className="flex items-center justify-center w-full h-screen relative ">
-       
       <img
         src={CookingImg}
         alt="Background Image"
@@ -22,7 +21,9 @@ const AuthPage = ({ children }) => {
           opacity: "1",
         }}
       />
-      <div className=" absolute size-max inset-y-1/5 right-40 items-center justify-center">{children}</div>
+      <div className=" absolute size-max inset-y-1/5 right-40 items-center justify-center">
+        {children}
+      </div>
     </div>
   );
 };
